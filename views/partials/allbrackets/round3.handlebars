@@ -1,0 +1,23 @@
+
+<div>
+    <div class="rnd-row col s12">
+        <h5>Round 3</h5>
+        <div class="end-btn">
+            <button data-id="{{dbBracket.id}}" data-rd="3" class="btn waves-effect waves-light close-btn" type="submit" name="action">Close Bracket</button>
+        </div>
+    </div>
+    <div>
+        <div>
+            <div class="col s12 pairing">
+                <div class="first col s6">
+                    <p>{{dbBracket.MatchUps.[6].option1}} | Current Votes: {{dbBracket.MatchUps.[6].option1_votes}}</p>
+                        <button class="vote" data-didvote="false" data-rd="3" data-for="{{dbBracket.MatchUps.[6].option1}}" data-not="{{dbBracket.MatchUps.[6].option2}}" data-id="{{dbBracket.id}}">vote</button>
+                </div>
+                <div class="second col s6">
+                    <p>{{dbBracket.MatchUps.[6].option2}} | Current Votes: {{dbBracket.MatchUps.[6].option2_votes}}</p>
+                        <button class="vote" data-didvote="false" data-rd="3" data-for="{{dbBracket.MatchUps.[6].option2}}" data-not="{{dbBracket.MatchUps.[6].option1}}" data-id="{{dbBracket.id}}">vote</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

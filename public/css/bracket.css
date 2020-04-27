@@ -1,0 +1,31 @@
+.nav-bar{
+    background-color: black;
+}
+
+.pairing {
+    display: flex;
+    justify-content: space-evenly;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+.first{
+    display: flex;
+    justify-content: space-between;
+    align-items: left;
+}
+
+.second{
+    display: flex;
+    justify-content: space-between;
+    align-items: right;
+    flex-direction: row-reverse;
+    border-left: 2px solid black;
+}
+
+.rnd-row{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}

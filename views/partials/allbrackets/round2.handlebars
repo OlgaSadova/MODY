@@ -1,0 +1,37 @@
+<div>
+    <div class="rnd-row col s12">
+        <h5>Round 2</h5>
+        <div class="end-btn">
+            <button data-id="{{dbBracket.id}}" data-rd="3" class="btn waves-effect waves-light end-rd" type="submit" name="action">End Round</button>
+        </div>
+    </div>
+    <div>
+        <div>
+            <div class="col s12 pairing">
+                <div class="first col s6">
+                    <p>{{dbBracket.MatchUps.[4].option1}} | Current Votes: {{dbBracket.MatchUps.[4].option1_votes}}</p>
+                    <button class="vote" data-didvote="false" data-rd="2" data-for="{{dbBracket.MatchUps.[4].option1}}" data-not="{{dbBracket.MatchUps.[4].option2}}" data-id="{{dbBracket.id}}">vote</button>    
+                </div>
+                <div class="second col s6">
+                    <p>{{dbBracket.MatchUps.[4].option2}} | Current Votes: {{dbBracket.MatchUps.[4].option2_votes}}</p>
+                    <button class="vote" data-didvote="false" data-rd="2" data-for="{{dbBracket.MatchUps.[4].option2}}" data-not="{{dbBracket.MatchUps.[4].option1}}" data-id="{{dbBracket.id}}">vote</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div>
+            <div class="col s12 pairing">
+                <div class="first col s6">
+                    <p>{{dbBracket.MatchUps.[5].option1}} | Current Votes: {{dbBracket.MatchUps.[5].option1_votes}}</p>
+                        <button class="vote" data-didvote="false" data-rd="2" data-for="{{dbBracket.MatchUps.[5].option1}}" data-not="{{dbBracket.MatchUps.[5].option2}}" data-id="{{dbBracket.id}}">vote</button>
+                </div>
+                <div class="second col s6">
+                    <p>{{dbBracket.MatchUps.[5].option2}} | Current Votes: {{dbBracket.MatchUps.[5].option2_votes}}</p>
+                        <button class="vote" data-didvote="false" data-rd="2" data-for="{{dbBracket.MatchUps.[5].option2}}" data-not="{{dbBracket.MatchUps.[5].option1}}" data-id="{{dbBracket.id}}">vote</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

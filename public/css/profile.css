@@ -1,0 +1,46 @@
+body {
+    background: url(https://picjumbo.com/wp-content/uploads/silver-pen-in-open-business-day-planner-diary-2210x1473.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-family: "Roboto", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.nav-wrapper {
+    background-color: rgb(56, 63, 56);
+    -ms-flex-item-align: auto;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 11mm;
+}
+
+.card-content {
+    text-align: left;
+    color: rgb(56, 63, 56);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 6mm;
+}
+
+h6 {
+    text-shadow: cornsilk, 4mm;
+    color: rgb(36, 31, 31);
+    font-size: 6mm;
+    border-radius: 1mm;
+    border-color: blanchedalmond;
+    /* -webkit-text-stroke: 0.1mm rgb(241, 234, 234); */
+}
+
+.button {
+    color: white;
+    background-color: rgb(29, 34, 29);
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    height: 40px;
+}
+
+.container{
+    background-color:rgb(236, 235, 232)
+}

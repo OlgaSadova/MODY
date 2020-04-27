@@ -1,0 +1,48 @@
+<link rel="stylesheet" href="/css/profile.css" type="text/css" />
+<div class="navbar-fixed">
+    <nav class="nav-extended nav-bar">
+        <div class="nav-wrapper">
+            <a href="#" class="brand-logo right">MODY</a>
+            <ul id="nav-mobile" class="left">
+                
+                <li><a href="/allbrackets">All brackets</a></li>
+            </ul>
+        </div>
+    </nav>
+</div>
+    <div class="container">
+
+        <div class="row">
+            <div class="col s12">
+                <div class="row">
+                    <div class="col s6" class="card">
+                        <p><input type="file" accept="image/*" name="image" id="file" onchange="loadFile(event)" style="display: none;"></p>
+                        {{!-- <p><label for="file" style="cursor: pointer;">Upload Image</label></p> --}}
+                        <img src="https://tse1.mm.bing.net/th?id=OIP.uUa6VFXKuplp0-Dv8GOqxwAAAA&pid=Api&P=0&w=300&h=300" alt="default">
+                        {{!-- <p><img id="output" width="200" /></p> --}}
+
+                        <div class="card-content">
+                            <p>Name: {{user.username}}</p>
+                            
+                        </div>
+                    </div>
+                    <div class="col s6">
+                        <h6>Brackets:</h6>
+                        {{#each brackets}}
+                            <div class="{{this.id}}">
+                                <h6><a href="/brackets/{{this.id}}">{{this.name}}</a></h6>
+                            </div>
+                        {{/each}}
+                    </div>
+                </div>
+                    <div class="row">
+                        <div class="col-12">
+                        <button class="button" type="button"><a href="/newbracket">Create New Bracket</a></button>
+                        </div>          
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    

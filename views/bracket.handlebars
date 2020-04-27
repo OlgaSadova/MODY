@@ -1,0 +1,30 @@
+<link rel="stylesheet" href="/css/bracket.css" type="text/css" />
+<div class="navbar-fixed">
+    <nav class="nav-bar">
+        <div class="nav-wrapper">
+            <a href="#" class="brand-logo right">MODY</a>
+            <ul id="nav-mobile" class="left">
+                <li><a href="/profile" class="active">Profile</a></li>
+                <li><a href="/allbrackets">All Brackets</a></li>
+            </ul>
+        </div>
+    </nav>
+</div>
+<h1 id="bracket-info" data-round='{{dbBracket.current_round}}'> {{dbBracket.name}}</h1>
+<div class="row">
+    {{#if round1}}
+        {{>allbrackets/round1}}
+    {{/if}}
+        
+    {{#if round2}}
+        {{>allbrackets/round2}}
+    {{/if}}
+
+    {{#if round3}}
+        {{>allbrackets/round3}}
+    {{/if}}
+
+    {{#if winner}}
+        {{>allbrackets/winner}}
+    {{/if}}       
+</div>

@@ -1,0 +1,85 @@
+.row {
+    margin: 0;
+}
+
+.pairing {
+    border: 2px solid black;
+    border-radius: 5px;
+    margin: 3vh;
+}
+
+.rd2 {
+    height: 100%;
+}
+
+.rd-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.end-btn {
+    margin: 15px 0px 0px 15px;
+}
+
+.first {
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+}
+
+.second {
+    text-align: right;
+    border-left: 1px solid rgb(226, 219, 219);
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+}
+
+.round {
+    margin: 0px 20px;
+}
+
+
+/* @media only screen and (min-width: 600px) {
+    .second {
+        text-align: left;
+        border-left: 0px;
+        border-top: 2px solid black;
+        display: flex;
+        flex-direction: row;
+    }
+} */
+
+body {
+    background: url(https://picjumbo.com/wp-content/uploads/blank-notebook-in-an-office-space-2210x3315.jpg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-family: "Roboto", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+h4 {
+    text-align: center;
+}
+
+nav {
+    background-color: rgb(78, 75, 75);
+}
+
+.container {
+    background-color: rgb(236, 235, 232);
+}
+
+.competitors{
+    display:flex;
+    justify-content: space-evenly;
+
+}
+
+th {
+    text-align: center;
+}

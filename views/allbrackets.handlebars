@@ -1,0 +1,39 @@
+<link rel="stylesheet" href="/css/allbrackets.css" type="text/css" />
+<div class="row nav-row">
+        <div class="navbar-fixed">
+            <nav class="nav-extended nav-bar">
+                <div class="nav-wrapper">
+                    <a href="#" class="brand-logo right">MODY</a>
+                    <ul id="nav-mobile" class="left">
+                        <li><a href="/profile" class="active">Profile</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <div class="container">
+        <h4>Saved Brackets</h4>
+        <table>
+            <thead>
+                <tr>
+                    <th>Brackets Name</th>
+                    <th>Competitors</th>
+                </tr>
+            </thead>
+            <tbody>
+                {{#each brackets}}
+                <tr>
+                    <td class="{{this.id}}">
+                        <a class="bracket" href="/brackets/{{this.id}}"><p>{{this.name}}</p></a>
+                    </td>
+                    <td class="competitors">
+                        {{#each this.Options}}
+                           <p>{{this.name}}</p>       
+                        {{/each}}
+                    </td>
+                </tr>
+                {{/each}}
+            </tbody>    
+        </table>
+
+    </div>

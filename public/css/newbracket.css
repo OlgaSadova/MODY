@@ -1,0 +1,38 @@
+.nav-bar,
+.submit-btn {
+    background-color: rgb(67, 70, 67);
+}
+
+.nav-row {
+    margin-bottom: 10vh;
+}
+
+.btn-row {
+    display: flex;
+    justify-content: center;
+    color: white;
+    background-color: rgb(29, 34, 29);
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    height: 40px;
+    border-color: white;
+    border: 1mm;
+}
+
+body {
+    background: url(https://picjumbo.com/wp-content/uploads/laptop-notebook-and-smartphone-with-space-for-text-1080x720.jpg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-family: "Roboto", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.container {
+    border-color: black;
+    border-style: none;
+    background-color: rgb(247, 244, 240);
+}
